@@ -28,7 +28,7 @@ body {
   opacity: 1;
 }
 
-/* Estilos para scrollbars personalizados */
+
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;

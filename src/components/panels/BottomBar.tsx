@@ -1,4 +1,4 @@
-// src/components/panels/BottomBar.tsx
+
 import React from 'react';
 import DraggablePanel from '../layout/DraggablePanel';
 

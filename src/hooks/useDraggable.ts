@@ -39,18 +39,18 @@ export function useDraggable({
     let newX = e.clientX - dragStartRef.current.x;
     let newY = e.clientY - dragStartRef.current.y;
 
-    // Apply bounds constraints if available
+    
     if (bounds && elementRef.current) {
       const elementRect = elementRef.current.getBoundingClientRect();
       
-      // Constrain horizontal movement
+      
       if (newX < bounds.left) {
         newX = bounds.left;
       } else if (newX + elementRect.width > bounds.right) {
         newX = bounds.right - elementRect.width;
       }
       
-      // Constrain vertical movement
+      
       if (newY < bounds.top) {
         newY = bounds.top;
       } else if (newY + elementRect.height > bounds.bottom) {

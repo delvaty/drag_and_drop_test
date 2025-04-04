@@ -1,4 +1,4 @@
-// src/lib/responsive.ts
+
 import { useEffect, useState } from 'react';
 
 export enum ScreenSize {
@@ -39,13 +39,13 @@ export function useScreenSize() {
       }
     };
 
-    // Set initial size
+    
     handleResize();
     
-    // Add event listener
+    
     window.addEventListener('resize', handleResize);
     
-    // Cleanup
+    
     return () => {
       window.removeEventListener('resize', handleResize);
     };

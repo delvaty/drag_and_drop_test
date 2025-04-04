@@ -1,4 +1,4 @@
-// src/components/panels/PresetButtons.tsx
+
 import React from 'react';
 import DraggablePanel from '../layout/DraggablePanel';
 

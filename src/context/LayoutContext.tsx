@@ -1,4 +1,4 @@
-// src/context/LayoutContext.tsx
+
 import React, { createContext, useState, useContext, ReactNode } from 'react';
 
 interface PanelPosition {

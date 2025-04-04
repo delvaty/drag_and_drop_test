@@ -18,7 +18,7 @@ export function useDragAndDrop({
   const x = useMotionValue(initialPosition.x);
   const y = useMotionValue(initialPosition.y);
   
-  // Para animaciones de rotación o escala durante el arrastre
+  
   const scale = useTransform(
     [x, y],
     () => isDragging ? 1.02 : 1
@@ -27,7 +27,7 @@ export function useDragAndDrop({
   const panelRef = useRef<HTMLDivElement>(null);
   const dragConstraints = containerRef?.current ? { current: containerRef.current } : undefined;
 
-  // Control de la lógica de arrastre
+  
   const handleDragStart = () => {
     setIsDragging(true);
   };
@@ -39,13 +39,13 @@ export function useDragAndDrop({
     }
   };
 
-  // Función para restablecer la posición
+  
   const resetPosition = () => {
     x.set(initialPosition.x);
     y.set(initialPosition.y);
   };
 
-  // Valores a devolver para usar en los componentes
+ 
   return {
     x,
     y,

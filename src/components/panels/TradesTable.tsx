@@ -1,4 +1,4 @@
-// src/components/panels/TradesTable.tsx
+
 import React from 'react';
 import DraggablePanel from '../layout/DraggablePanel';
 
@@ -9,7 +9,7 @@ interface TradesTableProps {
 }
 
 const TradesTable: React.FC<TradesTableProps> = ({ id, className, onPositionChange }) => {
-  // Datos de muestra para la tabla
+  
   const trades = [
     { age: '1s', type: 'Sell', price: '$9.428', amount: '19.59', total: '$99.5' },
     { age: '15s', type: 'Sell', price: '$9.428', amount: '53.83', total: '$500.1' },
